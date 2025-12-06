@@ -1,5 +1,5 @@
 {
-  description = "My own dwl flake";
+  description = "My own dwl fork, as a flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
