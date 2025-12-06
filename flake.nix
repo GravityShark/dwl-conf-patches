@@ -14,7 +14,7 @@
     {
       packages.${system} =
         let
-          dwl-gravity = pkgs.dwl.override { configH = ./config.h; }.overrideAttrs (old: {
+          dwl-gravity = (pkgs.dwl.override { configH = ./config.h; }).overrideAttrs (old: {
             patches = (old.patches or [ ]) ++ [
               ./patches/bar/bar.patch
               ./patches/bar-appicons/bar-appicons.patch
