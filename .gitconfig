@@ -1,3 +1,3 @@
 [remote "origin"]
-	pushurl = git@github.com:GravityShark/dwl-conf-patches.git
+	pushurl = git@github.com:GravityShark/dwl-grav.git
 	; pushurl = git@github.com:Git/dwl-conf-patches.git
