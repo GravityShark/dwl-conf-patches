@@ -14,11 +14,10 @@
     {
       packages.${system} =
         let
-          dwl-gravity = (pkgs.dwl.override { configH = ./config.h; }).overrideAttrs (old: {
-            patches = (old.patches or [ ]) ++ [
-              ./patches/bar/bar.patch
-            ];
-          });
+          dwl-gravity = (pkgs.dwl.override { configH = ./config.h; });
+          # dwl-gravity = (pkgs.dwl.override { configH = ./config.h; }).overrideAttrs (old: {
+          #   src = ./;
+          #
         in
         {
           dwl-gravity = dwl-gravity;
